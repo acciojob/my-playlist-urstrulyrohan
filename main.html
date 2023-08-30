@@ -4,10 +4,67 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+		/*  your css code here. If applicable */
+body{
+	background-color: rgb(204, 204, 204);
+	
+}
+h1, h2{
+	text-align: center;
+}
+li{
+	list-style-type: none;
+}
+ul{
+	border: 0.3vw solid black;
+	border-radius: 5px;
+	padding: 20px;
+	background: white;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+div{
+	border: 0.3vw solid black;
+	border-radius: 5px;
+	background: white;
+	width:75vw;
+	height: 70vh;
+	margin-left:70px;
+}
+
+.player_one,
+.player_two {
+      background-color: rgb(255, 255, 255);
+      padding: 10px;
+      border-radius: 5px;
+	  width: 72vw;
+    }
+	</style>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+	<h1>My Playlist</h1>
+	<ul>
+    <li><a href="https://gaana.com/song/my-dear-markandeya" target="_blank">Song 1</a></li>
+    <li><a href="https://gaana.com/song/nijame-ne-chebutunna" target="_blank">Song 2</a></li>
+    <li><a href="https://www.saregama.com/song/gundellonaa_173861" target="_blank">Song 3</a></li>
+    <li><a href="https://www.saregama.com/song/aradhya_186722" target="_blank">Song 4</a></li>
+    <li><a href="https://www.saregama.com/song/frustration-song_174076" target="_blank">Song 5</a></li>
+  </ul>
+  <h2>Now Playing...</h2>
+  <div >
+    <video class="player_one" controls>
+      <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+    </video>
+  <h2>MP3 songs</h2>
+    <audio class="player_two" controls>
+		<source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/mpeg">
+    </audio>
+  </div>
     <script type="text/javascript" src="./script.js">
 </script>
 
